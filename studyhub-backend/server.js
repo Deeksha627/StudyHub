@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static('uploads')); // Serve uploaded files
-
 // Routes
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/admins', require('./routes/adminRoutes'));
@@ -16,6 +15,9 @@ app.use('/api/semesters', require('./routes/semesterRoutes'));
 app.use('/api/subjects', require('./routes/subjectRoutes'));
 app.use('/api/documents', require('./routes/documentRoutes'));
 app.use('/api/feedbacks', require('./routes/feedbackRoutes'));
+app.use('/api/admins', require('./routes/adminRoutes'));
+app.use('/uploads', express.static('uploads'));
+
 app.get('/', (req, res) => {
   res.send('Welcome to StudyHub API');
 });

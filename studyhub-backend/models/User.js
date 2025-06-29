@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
     type: Number,
     required: true,
     min: 1,
-    max: 6 // assuming 6 max years of study
+    max: 4 // assuming 4 max years of study
   },
   created_at: {
     type: Date,

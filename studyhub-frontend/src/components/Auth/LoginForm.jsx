@@ -4,24 +4,6 @@ import { motion } from 'framer-motion';
 import { FaUser, FaLock, FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const LoginForm = ({ formData, handleChange, handleSubmit, showPassword, setShowPassword  }) => {
-  const navigate = useNavigate();
-  // const [formData, setFormData] = useState({ email: '', password: '' });
-  // const [showPassword, setShowPassword] = useState(false);
-
-  // const handleChange = (e) =>
-    // setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  /*const handleSubmit = (e) => {
-    e.preventDefault();
-    const { email, password } = formData;
-    if (!email || !password) {
-      alert('Please enter both email/username and password.');
-      return;
-    }
-    console.log('Login:', formData);
-    navigate('/home');
-  };*/
-
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <motion.div>

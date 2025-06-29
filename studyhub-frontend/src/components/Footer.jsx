@@ -246,7 +246,7 @@ const Footer = () => {
 
         
         {/* Bottom Section */}
-        <div className="border-t border-blue-300 pt-10 dark:border-white/20 pt-10">
+        <div className="border-t border-blue-300 pt-10 dark:border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3 text-blue-600 dark:text-blue-200 text-lg">
               <span>Made with</span>
